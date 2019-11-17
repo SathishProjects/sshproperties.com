@@ -423,13 +423,13 @@ select {
 }
 
 .radford.footer-1-0-6 .footer-block.first {
-    width: calc(36% + 100px);
+    width: 35%;
 }
 
 .radford.footer-1-0-6 .footer-block {
     display: inline-block;
     vertical-align: top;
-    width: 28%;
+    width: 35%;
     padding: 0 100px 0 0;
     margin: 0 -2px;
     position: relative;
@@ -439,7 +439,7 @@ select {
 
 .radford.footer-1-0-6 .footer-block.last {
     padding: 0;
-    width: calc(36% - 100px);
+    width: 30%;
 }
 
 .radford.footer-1-0-6 .footer-copyright {
@@ -1017,10 +1017,6 @@ select {
 
 .contact-form-social{
     display: inline-flex;
-}
-
-.contact-form-social > img{
-    margin-right: 20px;
 }
 
 /* End of Contact us */
