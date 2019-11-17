@@ -1,0 +1,1507 @@
+body {
+    overflow-x: hidden;
+    font-size: 16px;
+    color: #000000;
+    padding: 0;
+    margin: 0;
+    -moz-text-size-adjust: none;
+    -ms-text-size-adjust: none;
+    text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+}
+
+html,
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-family: 'Avenir Roman';
+    background-color: #ffffff;
+}
+
+button,
+input,
+select {
+    font-family: 'Avenir Roman';
+}
+
+@font-face {
+    font-family: 'Avenir Roman';
+    src: url('https://static-lp.s3.amazonaws.com/fonts/radford/avenir/Avenir-Roman.eot');
+    src: url('https://static-lp.s3.amazonaws.com/fonts/radford/avenir/Avenir-Roman?#iefix') format('embedded-opentype'), url('https://static-lp.s3.amazonaws.com/fonts/radford/avenir/Avenir-Roman.woff') format('woff'), url('https://static-lp.s3.amazonaws.com/fonts/radford/avenir/Avenir-Roman.ttf') format('truetype'), url('https://static-lp.s3.amazonaws.com/fonts/radford/avenir/Avenir-Roman.svg#linecons') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Avenir Medium';
+    src: url('https://static-lp.s3.amazonaws.com/fonts/radford/avenir/Avenir-Medium.eot');
+    src: url('https://static-lp.s3.amazonaws.com/fonts/radford/avenir/Avenir-Medium?#iefix') format('embedded-opentype'), url('https://static-lp.s3.amazonaws.com/fonts/radford/avenir/Avenir-Medium.woff') format('woff'), url('https://static-lp.s3.amazonaws.com/fonts/radford/avenir/Avenir-Medium.ttf') format('truetype'), url('https://static-lp.s3.amazonaws.com/fonts/radford/avenir/Avenir-Medium.svg#linecons') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* @font-face {
+    font-family: 'FontAwesome';
+    src: url('https://static-lp.s3.amazonaws.com/fonts/radford/font-awesome/fontawesome-webfont.eot?v=4.7.0');
+    src: url('https://static-lp.s3.amazonaws.com/fonts/radford/font-awesome/fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'),
+    url('https://static-lp.s3.amazonaws.com/fonts/radford/font-awesome/fontawesome-webfont.woff2?v=4.7.0') format('woff2'),
+    url('https://static-lp.s3.amazonaws.com/fonts/radford/font-awesome/fontawesome-webfont.woff?v=4.7.0') format('woff'),
+    url('https://static-lp.s3.amazonaws.com/fonts/radford/font-awesome/fontawesome-webfont.ttf?v=4.7.0') format('truetype'),
+    url('https://static-lp.s3.amazonaws.com/fonts/radford/font-awesome/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'fontello';
+    src: url('https://static-lp.s3.amazonaws.com/fonts/radford/fontello/fontello.eot?50119805');
+    src: url('https://static-lp.s3.amazonaws.com/fonts/radford/fontello/fontello.eot?50119805#iefix') format('embedded-opentype'),
+    url('https://static-lp.s3.amazonaws.com/fonts/radford/fontello/fontello.woff2?50119805') format('woff2'),
+    url('https://static-lp.s3.amazonaws.com/fonts/radford/fontello/fontello.woff?50119805') format('woff'),
+    url('https://static-lp.s3.amazonaws.com/fonts/radford/fontello/fontello.ttf?50119805') format('truetype'),
+    url('https://static-lp.s3.amazonaws.com/fonts/radford/fontello/fontello.svg?50119805#fontello') format('svg');
+    font-weight: normal;
+    font-style: normal;
+} */
+
+@font-face {
+    font-family: 'Garamond';
+    src: url('https://static-lp.s3.amazonaws.com/fonts/radford/garamond/Garamond.eot?#iefix') format('embedded-opentype'), url('https://static-lp.s3.amazonaws.com/fonts/radford/garamond/Garamond.woff') format('woff'), url('https://static-lp.s3.amazonaws.com/fonts/radford/garamond/Garamond.ttf') format('truetype'), url('https://static-lp.s3.amazonaws.com/fonts/radford/garamond/Garamond.svg#Garamond') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'tangerine';
+    src: url('../fonts/trajan/trajanpro_regular.eot');
+    src: url('../fonts/trajan/trajanpro_regular.eot?#iefix') format('embedded-opentype'), url('../fonts/trajan/trajanpro_regular.woff2') format('woff2'), url('../fonts/trajan/trajanpro_regular.woff') format('woff'), url('../fonts/trajan/trajanpro_regular.ttf') format('truetype'), url('../fonts/trajan/trajanpro_regular.svg#tangerineregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* Loading screen */
+
+#fullscreen-overlay {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    background-color: rgba(25, 25, 25, 1);
+    overflow-x: hidden;
+    transition: 1s, z-index 0s;
+}
+
+#overlay-content {
+    position: absolute;
+    height: 100vh;
+    text-align: center;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+}
+
+#overlay-content>img {
+    max-width: 50px;
+}
+
+#overlay-content>img {
+    margin: 0 auto;
+}
+
+#fullscreen-overlay.closed.standard {
+    height: 0px;
+}
+
+#fullscreen-overlay.closed {
+    transition: 1s, z-index 0s linear 1s;
+}
+
+
+/* End of Loading screen */
+
+.main-container {
+    overflow-x: hidden;
+}
+
+.radford h1,
+.radford h2,
+.radford h3,
+.radford h4,
+.radford h5,
+.radford h6,
+.radford p,
+.radford blockquote,
+.radford pre,
+.radford abbr,
+.radford address,
+.radford cite,
+.radford code,
+.radford del,
+.radford dfn,
+.radford em,
+.radford img,
+.radford ins,
+.radford kbd,
+.radford q,
+.radford samp,
+.radford small,
+.radford strong,
+.radford sub,
+.radford var,
+.radford fieldset,
+.radford form,
+.radford label,
+.radford legend,
+.radford table,
+.radford caption,
+.radford tbody,
+.radford tfoot,
+.radford thead,
+.radford tr,
+.radford th,
+.radford td,
+.radford article,
+.radford aside,
+.radford canvas,
+.radford details,
+.radford figcaption,
+.radford figure,
+.radford footer,
+.radford header,
+.radford hgroup,
+.radford menu,
+.radford nav,
+.radford section,
+.radford summary,
+.radford time,
+.radford mark,
+.radford audio,
+.radford video,
+.radford ul,
+.radford li {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    font-weight: normal;
+    vertical-align: baseline;
+    background: transparent;
+    list-style: none;
+}
+
+.radford footer,
+.radford header,
+.radford hgroup,
+.radford menu,
+.radford nav,
+.radford section,
+.radford summary,
+.radford time,
+.radford mark,
+.radford audio,
+.radford video,
+.radford ul,
+.radford li {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    font-weight: normal;
+    vertical-align: baseline;
+    background: transparent;
+    list-style: none;
+}
+
+.radford article,
+.radford aside,
+.radford details,
+.radford figcaption,
+.radford figure,
+.radford footer,
+.radford header,
+.radford hgroup,
+.radford menu,
+.radford nav,
+.radford section {
+    display: block;
+}
+
+
+/* End of main */
+
+
+/* Header */
+
+
+/* Header */
+
+.header-radford-version.radford header.dark {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 25px 0;
+}
+
+.header-radford-version.radford header {
+    float: left;
+    width: 100%;
+    position: fixed;
+    z-index: 3;
+    padding: 40px 0;
+    top: 0;
+    left: 0;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.header-radford-version.radford header .mobile-nav {
+    right: 20px;
+    margin: -4px 0 0 0;
+    position: absolute;
+    z-index: 1;
+    display: none;
+}
+
+.header-radford-version.radford header .mobile-nav a {
+    float: left;
+    width: 24px;
+    height: 22px;
+}
+
+.header-radford-version.radford header .mobile-nav a span {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background: #fff;
+    margin: -1px 0 0 0;
+    cursor: pointer;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.radford h1 {
+    font-size: 75px;
+}
+
+.header-radford-version.radford header.dark .logo {
+    width: 300px;
+}
+
+.header-radford-version.radford header .logo {
+    width: 500px;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.header-radford-version.radford header.dark nav {
+    padding: 10px 0 0 0;
+    margin: 10px 0 0 0;
+}
+
+.header-radford-version.radford header nav {
+    float: left;
+    width: 100%;
+    text-align: center;
+    background: url(https://static-lp.s3.amazonaws.com/images/radford/shaded-border.png) top center no-repeat;
+    background-size: 100% auto;
+    padding: 30px 0 0 0;
+    margin: 30px 0 0 0;
+}
+
+.header-radford-version.radford header nav ul li {
+    position: relative;
+    display: inline-block;
+    padding: 0 25px;
+}
+
+.header-radford-version.radford header nav ul li a {
+    font-family: 'Avenir Medium';
+}
+
+.header-radford-version.radford header nav ul li a {
+    color: #fff;
+    font-size: 12px;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.header-radford-version.radford header nav ul li .sub-nav-outer {
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    overflow: visible;
+    padding-top: 37px;
+    margin: 0 0 0 -15px;
+    display: none;
+    cursor: pointer;
+}
+
+.header-radford-version.radford header nav ul li .sub-nav-outer .sub-nav {
+    cursor: default;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 10px 15px;
+    width: 180px;
+}
+
+.header-radford-version.radford header nav ul li .sub-nav-outer .sub-nav ul li {
+    display: block;
+    padding: 0 0 10px 0;
+    text-align: left;
+}
+
+.header-radford-version.radford header nav ul li {
+    position: relative;
+    display: inline-block;
+    padding: 0 23px;
+}
+
+.header-radford-version.radford header nav ul li a:hover {
+    color: #fff;
+}
+
+.header-radford-version.radford header nav ul li a:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 1px;
+    width: 0px;
+    background: #fff;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.header-radford-version.radford header nav ul li a:hover:after {
+    width: 100%;
+}
+
+
+/* End of Header */
+
+
+/* Footer */
+
+.radford.footer-1-0-6 {
+    position: relative;
+}
+
+.radford.footer-1-0-6 footer {
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    background: #000000;
+    color: #93918e;
+    padding: 50px 0;
+    overflow: hidden;
+    float: left;
+    width: 100%;
+    /* position: fixed; */
+    /* bottom: 0; */
+}
+
+.radford * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.radford .container {
+    width: 1330px;
+    margin: 0 auto;
+}
+
+.radford.footer-1-0-6 .footer-block.first {
+    width: calc(36% + 100px);
+}
+
+.radford.footer-1-0-6 .footer-block {
+    display: inline-block;
+    vertical-align: top;
+    width: 28%;
+    padding: 0 100px 0 0;
+    margin: 0 -2px;
+    position: relative;
+    background-color: inherit;
+    color: inherit;
+}
+
+.radford.footer-1-0-6 .footer-block.last {
+    padding: 0;
+    width: calc(36% - 100px);
+}
+
+.radford.footer-1-0-6 .footer-copyright {
+    width: 100%;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    padding: 30px 0 0 0;
+    /* margin: 30px 0 0 0; */
+}
+
+.radford.footer-1-0-6 .footer-block img {
+    float: left;
+    margin: 6px 30px 0 0 !important;
+}
+
+.radford img {
+    display: block;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.radford.footer-1-0-6 .footer-block.first h5 {
+    letter-spacing: 4px;
+}
+
+.radford.footer-1-0-6 .footer-block h5 {
+    margin: 0 0 15px 0;
+}
+
+.radford.footer-1-0-6 .footer-block h5,
+.radford.footer-1-0-6 .footer-block a {
+    color: #fff;
+}
+
+.f47fu0b {
+    font-family: tangerine !important;
+    font-size: 19px !important;
+    font-weight: normal !important;
+    text-transform: uppercase !important;
+}
+
+.fjnz2h2 {
+    color: #93918e;
+    font-family: Avenir Roman !important;
+    font-size: 16px !important;
+    font-weight: normal !important;
+    text-transform: none;
+}
+
+.radford.footer-1-0-6 .footer-block>div a {
+    display: inline-block;
+    margin: 10px 0;
+}
+
+.radford.footer-1-0-6 .footer-block h5,
+.radford.footer-1-0-6 .footer-block a {
+    color: #fff;
+}
+
+.radford.footer-1-0-6 a,
+.radford.footer-1-0-6 a:hover {
+    color: #fff;
+}
+
+.radford a,
+.radford a:hover {
+    color: #000000;
+    text-decoration: none;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.radford a {
+    cursor: pointer;
+}
+
+.radford.footer-1-0-6 .footer-copyright p {
+    float: left;
+    font-style: normal;
+}
+
+.radford.footer-1-0-6 p {
+    font-style: normal;
+}
+
+.far6138 {
+    color: #93918e;
+    font-family: Avenir Roman;
+    font-size: 14px !important;
+    font-weight: normal;
+    text-transform: none;
+}
+
+.radford.footer-1-0-6 .footer-copyright .footer-last {
+    margin-top: 0px;
+    text-align: center;
+}
+
+.radford.footer-1-0-6 .footer-copyright .footer-social {
+    float: right;
+    margin-right: 55px;
+}
+
+.radford.footer-1-0-6 .footer-copyright .footer-social img {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.radford.footer-1-0-6 .footer-block a.contact-us.link-btn {
+    font-size: 16px;
+    text-align: left;
+    min-width: 250px;
+    padding: 12px 20px;
+    margin: 1.2em 0 20px 0;
+}
+
+.radford.footer-1-0-6 .footer-block a.contact-us {
+    color: #fff;
+    padding: 12px 20px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    display: inline-block;
+    min-width: 250px;
+    margin: 0 0 20px 0;
+}
+
+.radford.footer-1-0-6 .footer-block a.contact-us:hover {
+    color: #000;
+    background: #fff;
+}
+
+
+/* End of Footer */
+
+
+/* Contact us */
+
+.radford.contact-form-overlay-1_0_2 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    display: none;
+    color: #fff;
+    text-align: center;
+}
+
+.radford.contact-form-overlay-1_0_2:after {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(25, 25, 25, 0.96);
+    z-index: -1;
+}
+
+.radford.contact-form-overlay-1_0_2 .overlay-close,
+.radford.contact-form-overlay-1_0_2 .overlay-close:hover {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    color: #fff;
+    cursor: pointer;
+    z-index: 500;
+}
+
+.radford.contact-form-overlay-1_0_2 .contact-form-overlay-wrapper.overlay-visible {
+    top: 50%;
+}
+
+.radford.contact-form-overlay-1_0_2 .contact-form-overlay-wrapper {
+    display: table;
+    width: 100%;
+    position: relative;
+    top: -100%;
+    -webkit-transform: translate(0%, -50%);
+    transform: translate(0%, -50%);
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    padding: 50px;
+}
+
+.radford.contact-form-overlay-1_0_2 .contact-form-overlay-wrapper .container {
+    max-width: 1000px;
+}
+
+.radford.contact-form-overlay-1_0_2 .contact-form-overlay-wrapper .container h2 {
+    float: left;
+    width: 100%;
+    margin: 0 0 30px 0;
+    padding: 0 0 0 30px;
+    text-align: left;
+}
+
+.radford .pull-title {
+    margin-left: -40px !important;
+}
+
+.radford h2 {
+    font-size: 50px;
+}
+
+.radford h2 {
+    font-family: 'Garamond';
+}
+
+.radford.contact-form-overlay-1_0_2 .contact-form-overlay-wrapper .container span {
+    display: block;
+}
+
+.radford.contact-form-overlay-1_0_2 .contact-form-overlay-wrapper .container .form-block,
+.radford.contact-form-overlay-1_0_2 .contact-form-overlay-wrapper .container .contact-block {
+    display: table-cell;
+    vertical-align: top;
+    width: 50%;
+    text-align: left;
+    padding: 30px;
+}
+
+.radford.contact-form-overlay-1_0_2 .contact-form-overlay-wrapper .container .form-block h5,
+.radford.contact-form-overlay-1_0_2 .contact-form-overlay-wrapper .container .contact-block h5 {
+    margin: 0 0 20px 0;
+}
+
+.radford h5 {
+    font-size: 30px;
+    font-family: 'Garamond';
+}
+
+.radford.contact-form-overlay-1_0_2 .contact-form-overlay-wrapper .container .contact-block span {
+    display: inline-block;
+    color: #fff;
+    margin: 0 0 20px 0;
+}
+
+.radford.contact-form-overlay-1_0_2 .contact-form-overlay-wrapper .container .contact-block p,
+.radford.contact-form-overlay-1_0_2 .contact-form-overlay-wrapper .container .contact-block .description {
+    margin: 0 0 10px 0;
+    color: #93918e;
+}
+
+.radford.contact-form-overlay-1_0_2 .contact-form-overlay-wrapper .container .contact-block a {
+    display: inline-block;
+    color: #fff;
+    margin: 20px 0;
+}
+
+.radford.contact-form-overlay-1_0_2 .contact-form-overlay-wrapper .container .form-block ul li {
+    float: left;
+    width: 100%;
+    margin: 0 0 10px 0;
+    position: relative;
+}
+
+.radford.contact-form-overlay-1_0_2 .contact-form-overlay-wrapper .container .form-block input[type='text'],
+.radford.contact-form-overlay-1_0_2 .contact-form-overlay-wrapper .container .form-block input[type='password'],
+.radford.contact-form-overlay-1_0_2 .contact-form-overlay-wrapper .container .form-block textarea {
+    font-family: 'Avenir Roman';
+}
+
+.radford.contact-form-overlay-1_0_2 .contact-form-overlay-wrapper .container .form-block input[type='text'],
+.radford.contact-form-overlay-1_0_2 .contact-form-overlay-wrapper .container .form-block input[type='password'],
+.radford.contact-form-overlay-1_0_2 .contact-form-overlay-wrapper .container .form-block textarea {
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #fff;
+    font-size: 14px;
+    padding: 12px 20px 12px 20px;
+    width: 100%;
+}
+
+.radford.contact-form-overlay-1_0_2 .contact-form-overlay-wrapper .container .form-block .selectric-wrapper {
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.radford .selectric-wrapper {
+    position: relative;
+    cursor: pointer;
+}
+
+.selectric-input-component .selectric-wrapper {
+    position: relative;
+    cursor: pointer;
+}
+
+.radford .selectric-hide-select {
+    position: relative;
+    overflow: hidden;
+    width: 0;
+    height: 0;
+}
+
+.selectric-input-component .selectric-hide-select {
+    position: relative;
+    overflow: hidden;
+    width: 0;
+    height: 0;
+}
+
+.radford.contact-form-overlay-1_0_2 .contact-form-overlay-wrapper .container .form-block .selectric {
+    padding: 12px 20px 12px 20px;
+    background: transparent;
+    border: none;
+}
+
+.radford.contact-form-overlay-1_0_2 .contact-form-overlay-wrapper .container .form-block select {
+    color: rgba(0, 0, 0, 0);
+    text-shadow: 0 0 0 #fff;
+}
+
+.radford .selectric-hide-select select {
+    position: absolute;
+    left: -100%;
+}
+
+.selectric-input-component .selectric-hide-select select {
+    position: absolute;
+    left: -100%;
+}
+
+.radford .selectric {
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #b2b2b2;
+    color: #fff;
+    border-radius: 2px;
+    -mozborder-radius: 2px;
+    font-size: 16px;
+    padding: 10px 15px;
+    width: 100%;
+}
+
+.radford .selectric {
+    font-family: 'Avenir Roman';
+}
+
+.selectric-input-component .selectric {
+    border: 1px solid #ddd;
+    border-radius: 0px;
+    background: #f8f8f8;
+    position: relative;
+    overflow: hidden;
+}
+
+.radford.contact-form-overlay-1_0_2 .contact-form-overlay-wrapper .container .form-block .selectric .label {
+    font-family: 'Avenir Roman';
+}
+
+.radford.contact-form-overlay-1_0_2 .contact-form-overlay-wrapper .container .form-block .selectric .label {
+    color: #fff;
+    font-size: 14px;
+    height: 19px;
+    line-height: 18px;
+}
+
+.radford .selectric .label {
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 0;
+    padding: 1px 0;
+    color: #0d0d0d;
+    font-size: 16px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.radford .selectric .label {
+    font-family: 'Avenir Roman';
+}
+
+.selectric-input-component .selectric .label {
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 12px;
+    line-height: 38px;
+    color: #444;
+    height: 38px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.radford.contact-form-overlay-1_0_2 .contact-form-overlay-wrapper .container .form-block .selectric .button {
+    background: url(https://s3-us-west-2.amazonaws.com/static-lp/images/radford/dropdown-arrow-white.png) no-repeat scroll right center;
+    top: 2px;
+    right: 15px;
+}
+
+.radford .selectric .button {
+    display: block;
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    width: 20px;
+    background: url(https://static-lp.s3.amazonaws.com/images/radford/dropdown-arrow.png) center right no-repeat;
+    text-align: center;
+    text-indent: -99999px;
+}
+
+.selectric-input-component .selectric .button {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 38px;
+    height: 38px;
+    line-height: 38px;
+    background-color: #f8f8f8;
+    color: #bbb;
+    text-align: center;
+    font: 0/0 a;
+    *font: 20px/38px Lucida Sans Unicode, Arial Unicode MS, Arial;
+}
+
+.radford.contact-form-overlay-1_0_2 .contact-form-overlay-wrapper .container .form-block .link-btn {
+    color: #191919;
+    background: #fff;
+    padding: 12px 20px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    display: inline-block;
+    font-size: 16px;
+    text-align: left;
+    width: 100%;
+    max-width: 250px;
+    margin: 0 0 20px 0;
+    cursor: pointer;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.radford.contact-form-overlay-1_0_2 .contact-form-overlay-wrapper .container .form-block .link-btn:hover {
+    background: #191919;
+    color: #fff;
+    border: 1px solid #191919;
+}
+
+.radford.contact-form-overlay-1_0_2 .contact-form-overlay-wrapper .container .form-block .link-btn i {
+    float: right;
+    font-size: 13px;
+    margin: 4px -5px 0 0;
+    color: #191919;
+}
+
+.radford .selectric-items {
+    display: none;
+    position: absolute;
+    top: calc(100% + -1px);
+    left: 0;
+    background: #fff;
+    border: 1px solid #b2b2b2;
+    z-index: -1;
+    width: calc(100% - 2px);
+}
+
+.selectric-input-component .selectric-items {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #f8f8f8;
+    border: 1px solid #c4c4c4;
+    z-index: -1;
+    -webkit-box-shadow: 0 0 10px -6px;
+    box-shadow: 0 0 10px -6px;
+}
+
+.radford .selectric-items .selectric-scroll {
+    height: 100%;
+    overflow: auto;
+}
+
+.selectric-input-component .selectric-items .selectric-scroll {
+    height: 100%;
+    overflow: auto;
+}
+
+.radford .selectric-items ul,
+.radford .selectric-items li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.selectric-input-component .selectric-items ul,
+.selectric-input-component .selectric-items li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 12px;
+    line-height: 20px;
+    min-height: 20px;
+}
+
+.radford.contact-form-overlay-1_0_2 .contact-form-overlay-wrapper .container .form-block .selectric-items ul li {
+    font-family: 'Avenir Roman';
+}
+
+.radford.contact-form-overlay-1_0_2 .contact-form-overlay-wrapper .container .form-block .selectric-items ul li {
+    margin: 0;
+    font-size: 14px;
+}
+
+.radford.contact-form-overlay-1_0_2 .contact-form-overlay-wrapper .container .form-block ul li {
+    float: left;
+    width: 100%;
+    margin: 0 0 10px 0;
+    position: relative;
+}
+
+.radford .selectric-items li.highlighted {
+    background: #fff;
+}
+
+.selectric-input-component .selectric-items li:hover {
+    background: #d5d5d5;
+    color: #444;
+}
+
+.selectric-input-component .selectric-items li.highlighted {
+    background: #d0d0d0;
+    color: #444;
+}
+
+.selectric-input-component .selectric-items li.selected {
+    background: #e0e0e0;
+    color: #444;
+}
+
+.radford .selectric-items li {
+    display: block;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #212121;
+    border-bottom: 1px solid #ededed;
+}
+
+.radford .selectric-items ul,
+.radford .selectric-items li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.radford .selectric-items li {
+    font-family: 'Avenir Roman';
+}
+
+.selectric-input-component .selectric-items li {
+    display: block;
+    padding: 10px;
+    color: #666;
+    cursor: pointer;
+}
+
+.radford.contact-form-overlay-1_0_2 .contact-form-overlay-wrapper .container .contact-block hr {
+    line-height: 1px;
+    height: 1px;
+    border: 0px;
+    border-radius: 0px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    margin: 20px 0;
+    display: inline-block;
+    width: 100%;
+}
+
+.contact-form-social{
+    display: inline-flex;
+}
+
+.contact-form-social > img{
+    margin-right: 20px;
+}
+
+/* End of Contact us */
+
+
+/* Resource grid */
+
+.links-grid-radford.radford {
+    color: #000;
+    padding: 3.25em 0 0px;
+    float: left;
+    width: 100%;
+    background: #fff;
+    position: relative;
+}
+
+.links-grid-radford.radford h2 span {
+    display: block;
+}
+
+.links-grid-radford.radford h2 span:nth-child(2) {
+    padding-left: 40px;
+}
+
+.links-grid-radford.radford h2 span {
+    display: block;
+}
+
+.links-grid-radford.radford ul {
+    float: left;
+    width: 100%;
+    margin: 20px 0 50px 0;
+}
+
+.links-grid-radford.radford ul .grid-40 {
+    float: left;
+    width: 40%;
+    position: relative;
+}
+
+.links-grid-radford.radford .hover-block {
+    overflow: hidden;
+    border-right: 2px solid #000;
+    border-bottom: 2px solid #000;
+}
+
+.links-grid-radford.radford .first-image {
+    height: 30em;
+}
+
+.links-grid-radford.radford ul li img {
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    width: auto;
+    min-width: 100%;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.links-grid-radford.radford .search-by-neighborhood-content {
+    position: absolute;
+    left: 0;
+    bottom: 40px;
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.links-grid-radford.radford .search-by-neighborhood-content a.community-link.link-btn {
+    font-size: 16px;
+    text-align: left;
+    min-width: 180px;
+    padding: 12px 20px;
+    margin: 0 0 20px 0;
+}
+
+.links-grid-radford.radford a.link-btn.community-link {
+    float: none;
+    padding: 12px 20px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    display: inline-block;
+    min-width: 180px;
+    margin: 20px 0 0 0;
+    color: #fff;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    position: absolute;
+    bottom: -200px;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0%);
+    transform: translate(-50%, 0%);
+    text-align: left;
+}
+
+.links-grid-radford.radford ul li:hover img {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+.links-grid-radford.radford .hover-block:hover .search-by-neighborhood-content {
+    bottom: calc(50%);
+    -webkit-transform: translate(0%, 50%);
+    transform: translate(0%, 50%);
+}
+
+.links-grid-radford.radford .hover-block:hover .search-by-neighborhood-content a.community-link {
+    bottom: -90px;
+}
+
+.links-grid-radford.radford .search-by-neighborhood-content a.community-link:hover {
+    color: #000;
+    background: #fff;
+}
+
+.links-grid-radford.radford ul .grid-60 {
+    float: left;
+    width: 60%;
+    position: relative;
+}
+
+.links-grid-radford.radford ul .grid-45 {
+    float: left;
+    width: 45%;
+    position: relative;
+}
+
+.links-grid-radford.radford .hover-block {
+    overflow: hidden;
+    border-right: 2px solid #000;
+    border-bottom: 2px solid #000;
+}
+
+.links-grid-radford.radford .second-image {
+    height: 15em;
+}
+
+.links-grid-radford.radford ul .grid-55 {
+    float: left;
+    width: 55%;
+    position: relative;
+}
+
+.links-grid-radford.radford .third-image {
+    height: 15em;
+}
+
+.links-grid-radford.radford ul .grid-65 {
+    float: left;
+    width: 65%;
+    position: relative;
+}
+
+.links-grid-radford.radford .fourth-image {
+    height: 15em;
+}
+
+.links-grid-radford.radford ul .grid-35 {
+    float: left;
+    width: 35%;
+    position: relative;
+}
+
+.links-grid-radford.radford .fifth-image {
+    height: 15em;
+}
+
+.links-grid-radford.radford ul .grid-67 {
+    float: left;
+    width: 67%;
+    position: relative;
+}
+
+.links-grid-radford.radford ul .grid-100 {
+    float: left;
+    width: 100%;
+    position: relative;
+}
+
+.links-grid-radford.radford .sixth-image {
+    height: 18em;
+}
+
+.links-grid-radford.radford ul .grid-33 {
+    float: left;
+    width: 33%;
+    position: relative;
+}
+
+.links-grid-radford.radford ul .grid-100 {
+    float: left;
+    width: 100%;
+    position: relative;
+}
+
+.links-grid-radford.radford .seventh-image {
+    height: 18em;
+}
+
+
+/* End of resource grid */
+
+#carouselExampleIndicators{
+    top: 2px;
+}
+
+.carousel-item:after {
+    content:"";
+    display:block;
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    background:rgba(0,0,0,0.6);
+  }
+
+  .carousel-item {
+    height: 75vh;
+    min-height: 300px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-color: #342759;
+}
+
+/* End of carousel */
+
+/* About us  */
+
+.radford.about-1-0-3 {
+    background-color: white;
+    position: relative;
+}
+
+.radford.about-1-0-3 .owner {
+    min-height: 540px;
+    padding-top: 130px !important;
+    position: relative;
+    overflow: hidden;
+    color: #fff;
+    float: left;
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background: #191919 url('https://s3-us-west-2.amazonaws.com/static-lp/images/radford/background-lines.png') repeat;
+}
+
+.radford.about-1-0-3 section {
+    padding: 100px 0;
+}
+
+.radford.about-1-0-3 .owner .middle {
+    bottom: 50%;
+    left: 0;
+    width: 100%;
+}
+
+.radford.about-1-0-3 .owner .middle .about-owner {
+    display: inline-block;
+    width: 50%;
+    margin: 0 -2px;
+    vertical-align: middle;
+    visibility: visible;
+    animation-name: fadeInUp;
+}
+
+.radford.about-1-0-3 .owner .middle .about-owner h2.firstHeader {
+    /* margin: 0 0 0 -40px; */
+}
+
+.radford.about-1-0-3 .owner .middle .about-owner h2 {
+    margin: 0 100px 20px 0;
+}
+
+.radford.about-1-0-3 .owner .middle .about-owner h6 {
+    margin: 0 100px 20px 0;
+}
+
+.radford.about-1-0-3 .owner .middle .about-owner p {
+    margin: 0 100px 40px 0;
+}
+
+.radford.about-1-0-3 .owner .middle .about-gallery {
+    display: inline-block;
+    width: 50%;
+    margin: 0 -2px;
+    vertical-align: middle;
+    visibility: visible;
+    animation-delay: 0.2s;
+    animation-name: fadeInUp;
+}
+
+.radford.about-1-0-3 .owner .middle .about-gallery .about-gallery-table {
+    display: table;
+    width: 100%;
+    vertical-align: middle;
+}
+
+.radford.about-1-0-3 .owner .middle .about-gallery .about-gallery-table-row {
+    display: table-row;
+    vertical-align: middle;
+}
+
+.radford.about-1-0-3 .owner .middle .about-gallery .about-gallery-table-cols {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 2px 2px 0 0;
+    position: relative;
+}
+
+.radford.about-1-0-3 .owner .middle .about-gallery .about-gallery-table-cols img {
+    float: left;
+}
+
+/* End of about us */
+
+/* Brokerage */
+
+.radford.testimonials-1-0-2 {
+    background-color: #fff;
+    width: 100%;
+    display: inline-block;
+    position: relative;
+}
+
+.radford.testimonials-1-0-2 .our-client {
+    float: left;
+    padding: 100px 0;
+    width: 100%;
+}
+
+.radford.testimonials-1-0-2 section {
+    padding: 100px 0 !important;
+}
+
+.radford.testimonials-1-0-2 .our-client .testimonial-container {
+    width: 1330px;
+    margin: 0 auto;
+}
+
+.testimonial-container {
+    -webkit-box-flex: 0.3;
+    -webkit-flex: 0.3;
+    -ms-flex: 0.3;
+    flex: 0.3;
+    margin-bottom: 4em;
+}
+
+.radford.testimonials-1-0-2 .our-client .pull-title {
+    margin-left: -40px !important;
+}
+
+.radford.testimonials-1-0-2 .our-client h2, .radford.testimonials-1-0-2 .our-client h6 {
+    text-transform: none;
+    color: black;
+    font-weight: normal;
+    letter-spacing: 0;
+}
+
+.radford.testimonials-1-0-2 .our-client h2 {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    vertical-align: baseline;
+    background: transparent;
+    list-style: none;
+}
+
+.radford .pull-title {
+    margin-left: -40px !important;
+}
+
+.radford.testimonials-1-0-2 .our-client h2 span {
+    display: block;
+}
+
+.radford.testimonials-1-0-2 .our-client ul {
+    float: left;
+    margin: 80px 0 50px 0 !important;
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.radford.testimonials-1-0-2 .our-client ul, .radford.testimonials-1-0-2 .our-client li {
+    font-size: 100%;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    vertical-align: baseline;
+    background: transparent;
+    list-style: none;
+}
+
+.radford.testimonials-1-0-2 .our-client ul li.first {
+    margin-left: 0;
+}
+
+.radford.testimonials-1-0-2 .our-client ul li {
+    float: left;
+    background: #fff;
+    border: 1px solid #d8d8d8;
+    padding: 60px 40px;
+    max-width: calc(33.3333% - 24px);
+    margin: 0 18px;
+    text-align: center;
+    min-height: 432px;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+}
+
+.radford.testimonials-1-0-2 .our-client ul, .radford.testimonials-1-0-2 .our-client li {
+    font-size: 100%;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    vertical-align: baseline;
+    background: transparent;
+    list-style: none;
+}
+
+.radford.testimonials-1-0-2 .our-client ul li i {
+    width: 100%;
+    margin: 0 0 -18px 0;
+    font-size: 40px;
+    color: rgba(0, 0, 0, 0.15);
+    line-height: 100px;
+}
+
+.radford.testimonials-1-0-2 .our-client ul li i > span{
+    font-size: 30px;
+}
+
+.radford.testimonials-1-0-2 .our-client ul li p {
+    margin: 0 0 40px 0;
+    color: #616161;
+    line-height: 50px;
+}
+
+.radford.testimonials-1-0-2 .our-client p {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    vertical-align: baseline;
+    background: transparent;
+    list-style: none;
+}
+
+.radford.testimonials-1-0-2 .our-client ul li h6 {
+    font-size: 18px;
+}
+
+.radford.testimonials-1-0-2 .our-client h2, .radford.testimonials-1-0-2 .our-client h6 {
+    text-transform: none;
+    color: black;
+    font-weight: normal;
+    letter-spacing: 0;
+}
+
+.radford.testimonials-1-0-2 .our-client ul li.last {
+    margin-right: 0;
+}
+
