@@ -671,7 +671,7 @@ select {
 }
 
 .radford h5 {
-    font-size: 30px;
+    font-size: 45px;
     font-family: 'Garamond';
 }
 
@@ -1376,7 +1376,7 @@ select {
 }
 
 .ffidtf3{
-    font-size: 18px !important;
+    font-size: 21px !important;
 }
 
 .middle > .container > p{
@@ -1550,6 +1550,60 @@ select {
 .brokerage_span{
     font-size: 35px !important;
     color: #007bff !important;
+}
+
+@media screen and (max-width: 1180px){
+.radford.testimonials-1-0-2 .our-client .testimonial-container {
+    padding: 0 50px;
+}
+@media screen and (max-width: 1440px){
+.radford.testimonials-1-0-2 .our-client .testimonial-container {
+    width: 100%;
+    max-width: 1330px;
+    padding: 0 100px;
+}
+
+@media screen and (max-width: 1180px){
+.radford.testimonials-1-0-2 .our-client .pull-title {
+    margin-left: 0 !important;
+}
+
+@media screen and (max-width: 1280px){
+.radford.testimonials-1-0-2 .our-client h2 {
+    font-size: 50px;
+}
+
+@media screen and (max-width: 1180px){
+.radford .pull-title {
+    margin-left: 0 !important;
+}
+
+@media screen and (max-width: 1280px){
+.radford h2 {
+    font-size: 50px;
+}
+
+@media screen and (max-width: 1200px){
+.radford.testimonials-1-0-2 .our-client ul {
+    display: inline-block;
+}
+
+@media screen and (max-width: 1180px){
+.radford.testimonials-1-0-2 .our-client ul {
+    margin: 50px 0 !important;
+}
+
+@media screen and (max-width: 1200px){
+.radford.testimonials-1-0-2 .our-client ul li {
+    max-width: 100%;
+    padding: 25px;
+    margin: 0 0 20px 0;
+    -webkit-box-flex: 0;
+    -webkit-flex: none;
+    -ms-flex: none;
+    flex: none;
+    min-height: auto;
+    width: 36em;
 }
 
 .carousel-caption {
