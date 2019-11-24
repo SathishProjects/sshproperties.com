@@ -1,8 +1,8 @@
 $(document).ready(function () {
 
     $('.carousel').carousel({
-        interval: 2000
-    })
+        interval: 20000
+    });
 
     new WOW().init();
 
@@ -12,6 +12,13 @@ $(document).ready(function () {
     $(".overlay-close").on("click", function () {
         $("#contact-form").css("display", "none");
         $("body").css({ 'overflow-y': '', 'position': '', 'width': '', 'top': '' });
+    });
+
+    $(document).keyup(function (e) {
+        if (e.key === "Escape") { // escape key maps to keycode `27`
+            $("#contact-form").css("display", "none");
+            $("body").css({ 'overflow-y': '', 'position': '', 'width': '', 'top': '' });
+        }
     });
 
     $(".menu-contact").on("click", function () {

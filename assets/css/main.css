@@ -333,7 +333,7 @@ select {
 
 .header-radford-version.radford header nav ul li a {
     color: #fff;
-    font-size: 12px;
+    font-size: 16px;
     text-transform: uppercase;
     position: relative;
 }
@@ -569,6 +569,10 @@ select {
     background: #fff;
 }
 
+.description > *{
+    font-size: 21px;
+}
+
 
 /* End of Footer */
 
@@ -697,12 +701,16 @@ select {
 }
 
 .radford.contact-form-overlay-1_0_2 .contact-form-overlay-wrapper .container .form-block input[type='text'],
+.radford.contact-form-overlay-1_0_2 .contact-form-overlay-wrapper .container .form-block input[type='email'],
+.radford.contact-form-overlay-1_0_2 .contact-form-overlay-wrapper .container .form-block input[type='number'],
 .radford.contact-form-overlay-1_0_2 .contact-form-overlay-wrapper .container .form-block input[type='password'],
 .radford.contact-form-overlay-1_0_2 .contact-form-overlay-wrapper .container .form-block textarea {
     font-family: 'Avenir Roman';
 }
 
 .radford.contact-form-overlay-1_0_2 .contact-form-overlay-wrapper .container .form-block input[type='text'],
+.radford.contact-form-overlay-1_0_2 .contact-form-overlay-wrapper .container .form-block input[type='email'],
+.radford.contact-form-overlay-1_0_2 .contact-form-overlay-wrapper .container .form-block input[type='number'],
 .radford.contact-form-overlay-1_0_2 .contact-form-overlay-wrapper .container .form-block input[type='password'],
 .radford.contact-form-overlay-1_0_2 .contact-form-overlay-wrapper .container .form-block textarea {
     background: transparent;
@@ -748,8 +756,14 @@ select {
 }
 
 .radford.contact-form-overlay-1_0_2 .contact-form-overlay-wrapper .container .form-block select {
-    color: rgba(0, 0, 0, 0);
-    text-shadow: 0 0 0 #fff;
+    /* color: rgba(0, 0, 0, 0);
+    text-shadow: 0 0 0 #fff; */
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #6c757d;
+    font-size: 14px;
+    padding: 12px 20px 12px 20px;
+    width: 100%;
 }
 
 .radford .selectric-hide-select select {
@@ -1168,7 +1182,7 @@ select {
 
 .links-grid-radford.radford ul .grid-65 {
     float: left;
-    width: 65%;
+    width: 100%;
     position: relative;
 }
 
@@ -1261,6 +1275,24 @@ select {
     padding-top: 130px !important;
     position: relative;
     overflow: hidden;
+    color: #000;
+    float: left;
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.radford.about-1-0-3 .owner1 {
+    min-height: 540px;
+    padding-top: 130px !important;
+    position: relative;
+    overflow: hidden;
     color: #fff;
     float: left;
     width: 100%;
@@ -1275,17 +1307,21 @@ select {
     background: #191919 url('https://s3-us-west-2.amazonaws.com/static-lp/images/radford/background-lines.png') repeat;
 }
 
+#services{
+    background: #191919 url('https://s3-us-west-2.amazonaws.com/static-lp/images/radford/background-lines.png') repeat;
+}
+
 .radford.about-1-0-3 section {
     padding: 100px 0;
 }
 
-.radford.about-1-0-3 .owner .middle {
+.radford.about-1-0-3 .owner .middle, .radford.about-1-0-3 .owner1 .middle {
     bottom: 50%;
     left: 0;
     width: 100%;
 }
 
-.radford.about-1-0-3 .owner .middle .about-owner {
+.radford.about-1-0-3 .owner .middle .about-owner, .radford.about-1-0-3 .owner1 .middle .about-owner {
     display: inline-block;
     width: 50%;
     margin: 0 -2px;
@@ -1294,52 +1330,57 @@ select {
     animation-name: fadeInUp;
 }
 
-.radford.about-1-0-3 .owner .middle .about-owner h2.firstHeader {
-    /* margin: 0 0 0 -40px; */
-}
-
-.radford.about-1-0-3 .owner .middle .about-owner h2 {
+.radford.about-1-0-3 .owner .middle .about-owner h2, .radford.about-1-0-3 .owner1 .middle .about-owner h2 {
     margin: 0 100px 20px 0;
 }
 
-.radford.about-1-0-3 .owner .middle .about-owner h6 {
+.radford.about-1-0-3 .owner .middle .about-owner h6, .radford.about-1-0-3 .owner1 .middle .about-owner h6 {
     margin: 0 100px 20px 0;
 }
 
-.radford.about-1-0-3 .owner .middle .about-owner p {
+.radford.about-1-0-3 .owner .middle .about-owner p, .radford.about-1-0-3 .owner1 .middle .about-owner p {
     margin: 0 100px 40px 0;
 }
 
-.radford.about-1-0-3 .owner .middle .about-gallery {
+.radford.about-1-0-3 .owner .middle .about-gallery, .radford.about-1-0-3 .owner1 .middle .about-gallery {
     display: inline-block;
     width: 50%;
     margin: 0 -2px;
-    vertical-align: middle;
+    vertical-align: top;
     visibility: visible;
     animation-delay: 0.2s;
     animation-name: fadeInUp;
+    margin-top: 7%;
 }
 
-.radford.about-1-0-3 .owner .middle .about-gallery .about-gallery-table {
+.radford.about-1-0-3 .owner .middle .about-gallery .about-gallery-table, .radford.about-1-0-3 .owner .middle .about-gallery .about-gallery-table {
     display: table;
     width: 100%;
     vertical-align: middle;
 }
 
-.radford.about-1-0-3 .owner .middle .about-gallery .about-gallery-table-row {
+.radford.about-1-0-3 .owner .middle .about-gallery .about-gallery-table-row, .radford.about-1-0-3 .owner .middle .about-gallery .about-gallery-table-row {
     display: table-row;
     vertical-align: middle;
 }
 
-.radford.about-1-0-3 .owner .middle .about-gallery .about-gallery-table-cols {
+.radford.about-1-0-3 .owner .middle .about-gallery .about-gallery-table-cols, .radford.about-1-0-3 .owner .middle .about-gallery .about-gallery-table-cols {
     display: table-cell;
     vertical-align: middle;
     padding: 2px 2px 0 0;
     position: relative;
 }
 
-.radford.about-1-0-3 .owner .middle .about-gallery .about-gallery-table-cols img {
+.radford.about-1-0-3 .owner .middle .about-gallery .about-gallery-table-cols img, .radford.about-1-0-3 .owner .middle .about-gallery .about-gallery-table-cols img {
     float: left;
+}
+
+.ffidtf3{
+    font-size: 18px !important;
+}
+
+.middle > .container > p{
+    font-size: 21px !important;
 }
 
 /* End of about us */
@@ -1501,3 +1542,37 @@ select {
     margin-right: 0;
 }
 
+.brokerage{
+    font-size: 60px !important;
+    color: #007bff !important;
+}
+
+.brokerage_span{
+    font-size: 35px !important;
+    color: #007bff !important;
+}
+
+.carousel-caption {
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    bottom: initial;
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+    right: 15%;
+    left: 15%;
+    z-index: 10;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #fff;
+    text-align: center;
+}
+
+.carousel-heading{
+    font-size: 4.5rem;
+}
+
+.carousel-p{
+    font-size: 1.5rem;
+}
