@@ -1556,41 +1556,49 @@ select {
 .radford.testimonials-1-0-2 .our-client .testimonial-container {
     padding: 0 50px;
 }
+}
 @media screen and (max-width: 1440px){
 .radford.testimonials-1-0-2 .our-client .testimonial-container {
     width: 100%;
     max-width: 1330px;
     padding: 0 100px;
 }
+}
 
 @media screen and (max-width: 1180px){
 .radford.testimonials-1-0-2 .our-client .pull-title {
     margin-left: 0 !important;
+}
 }
 
 @media screen and (max-width: 1280px){
 .radford.testimonials-1-0-2 .our-client h2 {
     font-size: 50px;
 }
+}
 
 @media screen and (max-width: 1180px){
 .radford .pull-title {
     margin-left: 0 !important;
+}
 }
 
 @media screen and (max-width: 1280px){
 .radford h2 {
     font-size: 50px;
 }
+}
 
 @media screen and (max-width: 1200px){
 .radford.testimonials-1-0-2 .our-client ul {
     display: inline-block;
 }
+}
 
 @media screen and (max-width: 1180px){
 .radford.testimonials-1-0-2 .our-client ul {
     margin: 50px 0 !important;
+}
 }
 
 @media screen and (max-width: 1200px){
@@ -1604,6 +1612,7 @@ select {
     flex: none;
     min-height: auto;
     width: 36em;
+}
 }
 
 .carousel-caption {
@@ -1624,7 +1633,7 @@ select {
 }
 
 .carousel-heading{
-    font-size: 4.5rem;
+    font-size: 4.5rem !important;
 }
 
 .carousel-p{
