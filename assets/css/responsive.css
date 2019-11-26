@@ -1,0 +1,48 @@
+@media screen and (max-width: 1180px) {
+  .radford.testimonials-1-0-2 .our-client .testimonial-container {
+    padding: 0 50px;
+  }
+  .radford.testimonials-1-0-2 .our-client .pull-title {
+    margin-left: 0 !important;
+  }
+  .radford .pull-title {
+    margin-left: 0 !important;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .radford.testimonials-1-0-2 .our-client .testimonial-container {
+    width: 100%;
+    max-width: 1330px;
+    padding: 0 100px;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .radford.testimonials-1-0-2 .our-client h2 {
+    font-size: 50px;
+  }
+  .radford h2 {
+    font-size: 50px;
+  }
+}
+
+@media screen and (min-width: 1345px) {
+  .brokerage-container {
+    width: 1330px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .brokerage-container {
+    width: 576px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 991px) {
+    .list-group {
+      margin-bottom: 30px;
+    }
+  }
