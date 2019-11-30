@@ -76,6 +76,12 @@
   }
 }
 
+@media (min-width: 801px) and (max-width: 991px) {
+  .radford h5 {
+      font-size: 30px;
+  }
+}
+
 @media screen and (max-width: 991px) {
   .carousel-item {
     height: 32vh;
@@ -88,9 +94,6 @@
   }
   #navbarCollapse {
     padding: 25px;
-  }
-  .radford h5 {
-      font-size: 30px;
   }
 }
 
