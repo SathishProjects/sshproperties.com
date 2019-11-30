@@ -21,6 +21,7 @@ $(document).ready(function () {
     $(".overlay-close").on("click", function () {
         $("#contact-form").css("display", "none");
         $("body").css({ 'overflow-y': '', 'position': '', 'width': '', 'top': '' });
+        $('.navbar ').addClass('fixed-top');
     });
 
     $(document).keyup(function (e) {
@@ -33,6 +34,7 @@ $(document).ready(function () {
     $(".menu-contact").on("click", function () {
         $("#contact-form").css("display", "block");
         $("body").css({ 'overflow-y': 'hidden', 'position': 'fixed', 'width': '100%', 'top': '0px' });
+        $('.navbar ').removeClass('fixed-top');
     });
 
 });
