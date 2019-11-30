@@ -29,14 +29,28 @@
 
 @media screen and (min-width: 1345px) {
   .brokerage-container {
-    width: 1330px;
+    width: 80%;
     margin: 0 auto;
   }
 }
 
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 991px) and (max-width: 1345px) {
   .brokerage-container {
-    width: 576px;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 597px) and (max-width: 991px) {
+  .brokerage-container {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 597px) {
+  .brokerage-container {
+    width: 95%;
     margin: 0 auto;
   }
 }
@@ -92,5 +106,11 @@
   .navbar-toggler{
     margin-left: 48%;
   }
+}
 
+@media screen and (max-width: 768px) {
+  .footer-block{
+    width: 100% !important;
+    margin: 5% auto !important;
+  }
 }
