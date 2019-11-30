@@ -111,6 +111,6 @@
 @media screen and (max-width: 768px) {
   .footer-block{
     width: 100% !important;
-    margin: 5% auto !important;
+    margin: 1% auto !important;
   }
 }
