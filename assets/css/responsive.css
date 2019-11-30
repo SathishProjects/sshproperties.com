@@ -78,7 +78,7 @@
 
 @media (min-width: 801px) and (max-width: 991px) {
   .radford h5 {
-      font-size: 30px;
+    font-size: 30px;
   }
 }
 
@@ -136,6 +136,79 @@
 @media screen and (max-width: 800px) {
   .links-grid-radford.radford ul .grid-40,
   .links-grid-radford.radford ul .grid-60 {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .radford.contact-form-overlay-1_0_2 {
+    padding: 50px 20px;
+    padding-top: 50px;
+    padding-right: 20px;
+    padding-bottom: 50px;
+    padding-left: 20px;
+    width: calc(100vw - 40px);
+    overflow: scroll;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .radford.contact-form-overlay-1_0_2 .contact-form-overlay-wrapper,
+  .radford.contact-form-overlay-1_0_2
+    .contact-form-overlay-wrapper.overlay-visible {
+    top: 0;
+    -webkit-transform: translate(0%, 0%);
+    transform: translate(0%, 0%);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .radford.contact-form-overlay-1_0_2 .contact-form-overlay-wrapper .container {
+    display: inline-block;
+  }
+}
+
+.radford.contact-form-overlay-1_0_2 .contact-form-overlay-wrapper .container {
+  max-width: 1000px;
+}
+@media screen and (max-width: 767px) {
+  .radford.contact-form-overlay-1_0_2 .container {
+    padding: 0;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .radford.contact-form-overlay-1_0_2 .container {
+    padding: 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  .radford .container {
+    padding: 0 30px;
+  }
+}
+@media screen and (max-width: 1180px) {
+  .radford .container {
+    padding: 0 50px;
+  }
+}
+@media screen and (max-width: 1440px) {
+  .radford .container {
+    width: 100%;
+    max-width: 1330px;
+    padding: 0 100px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .radford.contact-form-overlay-1_0_2
+    .contact-form-overlay-wrapper
+    .container
+    .form-block,
+  .radford.contact-form-overlay-1_0_2
+    .contact-form-overlay-wrapper
+    .container
+    .contact-block {
+    display: inline-block;
     width: 100%;
   }
 }
