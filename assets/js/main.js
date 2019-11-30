@@ -18,9 +18,6 @@ $(document).ready(function () {
 
     new WOW().init();
 
-    // fadeout loading screen when document is ready
-    $("#fullscreen-overlay").addClass("closed");
-
     $(".overlay-close").on("click", function () {
         $("#contact-form").css("display", "none");
         $("body").css({ 'overflow-y': '', 'position': '', 'width': '', 'top': '' });
@@ -39,3 +36,10 @@ $(document).ready(function () {
     });
 
 });
+
+window.onload = function() {
+    // fadeout loading screen when document is ready
+    setTimeout(() => {
+        $("#fullscreen-overlay").addClass("closed");
+    }, 2000);
+};
