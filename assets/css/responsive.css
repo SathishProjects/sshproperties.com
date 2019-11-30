@@ -214,5 +214,14 @@
     .contact-block {
     display: inline-block;
     width: 100%;
+    padding: 0px;
+  }
+
+  .radford.contact-form-overlay-1_0_2 .contact-form-overlay-wrapper {
+      padding: 10px;
+  }
+
+  .radford.contact-form-overlay-1_0_2 .contact-form-overlay-wrapper .container h2 {
+      padding: 0;
   }
 }
