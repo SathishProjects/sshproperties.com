@@ -254,7 +254,7 @@ select {
 
 .header-radford-version.radford header.dark {
     background: rgba(0, 0, 0, 0.8);
-    padding: 25px 0;
+    padding: 17px 0;
 }
 
 .header-radford-version.radford header {
@@ -305,7 +305,7 @@ select {
 }
 
 .header-radford-version.radford header .logo {
-    width: 500px;
+    width: 400px;
     -webkit-transition: all 0.5s ease;
     transition: all 0.5s ease;
 }
@@ -1457,3 +1457,19 @@ select {
     font-size: 35px !important;
     color: #fff;
 }
+
+/* New header */
+
+.bg-black{
+    background-color: rgba(0, 0, 0, 0.8) !important;
+}
+
+.navbar-brand > img{
+    width: 300px;
+}
+
+.navbar-nav {
+    font-size: 16px;
+    text-transform: uppercase;
+}
+

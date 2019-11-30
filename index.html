@@ -30,7 +30,7 @@
 
         <!-- Header -->
         <div class="header-radford-version radford pinned">
-            <header class="main-page dark">
+            <header id="navbarMain" class="main-page  d-none d-lg-block d-xl-block">
                 <div class="container">
                     <div class="mobile-nav"><a><span></span></a></div>
                     <h1>
@@ -48,8 +48,31 @@
                     </nav>
                 </div>
             </header>
-            <div class="page-padding" style="height: 108.281px;"></div>
+
         </div>
+
+        <header>
+            <nav class="navbar hide-lg navbar-dark fixed-top bg-black d-md-block d-lg-none d-xl-none">
+                <a class="navbar-brand" href="#">
+                    <img src="./assets/img/png/ssh_logo.png" alt="" class="logo">
+                </a>
+                <button class="navbar-toggler collapsed" type="button" data-toggle="collapse"
+                    data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse" id="navbarCollapse" style="">
+                    <ul class="navbar-nav mr-auto">
+                        <li data-toggle="collapse" data-target=".navbar-collapse.show"  class="nav-item"><a class="nav-link header_link" href="#">Home</a></li>
+                        <li data-toggle="collapse" data-target=".navbar-collapse.show"  class="nav-item"><a class="nav-link header_link" href="#aboutus">About</a></li>
+                        <li data-toggle="collapse" data-target=".navbar-collapse.show"  class="nav-item"><a class="nav-link header_link" href="#services">Services</a></li>
+                        <li data-toggle="collapse" data-target=".navbar-collapse.show"  class="nav-item"><a class="nav-link header_link" href="#brokerage">Brokerage</a></li>
+                        <li data-toggle="collapse" data-target=".navbar-collapse.show"  class="nav-item"><a class="nav-link header_link" href="#carrers">Carrers</a></li>
+                        <li data-toggle="collapse" data-target=".navbar-collapse.show"  class="nav-item"><a class="nav-link menu-contact">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
 
         <!-- Slider -->
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -267,7 +290,7 @@
 
 
                                     <div class="text-center">
-                                        <h2 style="font-size:34px; line-height:2em; color: #fff;">BUYER(S)</h2>
+                                        <h2 style="font-size:34px; line-height:2em; color: #fff;">BUYER</h2>
                                     </div>
                                 </li>
                                 <li class="list-group-item text-center" style="background-color: #666;">
@@ -305,7 +328,7 @@
 
 
                                     <div class="text-center">
-                                        <h2 style="font-size:34px; line-height:2em; color: #fff;">SELLER(S)</h2>
+                                        <h2 style="font-size:34px; line-height:2em; color: #fff;">SELLER</h2>
                                     </div>
                                 </li>
                                 <li class="list-group-item text-center" style="background-color: #808080;">
@@ -346,7 +369,7 @@
 
 
                                     <div class="text-center">
-                                        <h2 style="font-size:34px; line-height:2em; color: #000;">TENANT(S)</h2>
+                                        <h2 style="font-size:34px; line-height:2em; color: #000;">RENTAL</h2>
                                     </div>
                                 </li>
                                 <li class="list-group-item text-center" style="background-color: #e8e8e8;">
@@ -396,7 +419,7 @@
                     <div class="form-block wow fadeInUp">
                         <h5>Online Inquiry</h5>
                         <form action="mail.php" method="GET">
-                            <ul>
+                            <ul style="list-style-type: none;">
                                 <li><input type="text" name="name" placeholder="Name" min="3" required></li>
                                 <li><input type="email" name="email" placeholder="Email" required></li>
                                 <li><input type="text" name="phone" placeholder="Phone" pattern="\d*" maxlength="10"

@@ -1,5 +1,17 @@
 $(document).ready(function () {
 
+    $(window).scroll(function() {
+        var nav = $('#navbarMain');
+        var top = 200;
+        if ($(window).scrollTop() >= top) {
+    
+            nav.addClass('dark');
+    
+        } else {
+            nav.removeClass('dark');
+        }
+    });
+
     $('.carousel').carousel({
         interval: 20000
     });
