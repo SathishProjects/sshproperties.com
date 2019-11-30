@@ -117,6 +117,10 @@
     width: 100% !important;
     margin: 1% auto !important;
   }
+
+  footer>.container{
+    padding: 0 15px !important;
+  }
 }
 
 @media screen and (max-width: 568px) {
