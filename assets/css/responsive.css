@@ -66,29 +66,31 @@
     height: 50vh;
   }
   .carousel-heading {
-      font-size: 3rem !important;
+    font-size: 3rem !important;
   }
   .carousel-p {
-      font-size: 1rem !important;
+    font-size: 1rem !important;
   }
   .carousel-caption {
-      top: 65%;
+    top: 65%;
   }
 }
-
 
 @media screen and (max-width: 991px) {
   .carousel-item {
     height: 32vh;
   }
   .carousel-heading {
-      font-size: 2.5rem !important;
+    font-size: 1.5rem !important;
   }
   .carousel-p {
-      font-size: 1rem !important;
+    font-size: 1rem !important;
   }
-  #navbarCollapse{
+  #navbarCollapse {
     padding: 25px;
+  }
+  .radford h5 {
+      font-size: 30px;
   }
 }
 
@@ -97,20 +99,40 @@
     margin: 0 23px;
   }
   .navbar-nav {
-      margin-left: 17%;
+    margin-left: 17%;
   }
-
 }
 
 @media screen and (min-width: 768px) {
-  .navbar-toggler{
+  .navbar-toggler {
     margin-left: 48%;
   }
 }
 
 @media screen and (max-width: 768px) {
-  .footer-block{
+  .footer-block {
     width: 100% !important;
     margin: 1% auto !important;
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .links-grid-radford.radford ul .grid-35,
+  .links-grid-radford.radford ul .grid-65,
+  .links-grid-radford.radford ul .grid-55,
+  .links-grid-radford.radford ul .grid-45,
+  .links-grid-radford.radford ul .grid-33,
+  .links-grid-radford.radford ul .grid-67,
+  .links-grid-radford.radford ul .grid-100,
+  .links-grid-radford.radford ul .grid-40,
+  .links-grid-radford.radford ul .grid-60 {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .links-grid-radford.radford ul .grid-40,
+  .links-grid-radford.radford ul .grid-60 {
+    width: 100%;
   }
 }
