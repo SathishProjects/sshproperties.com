@@ -53,7 +53,7 @@ $(document).ready(function () {
             cache: false,
             success: function(response) {
                 // Success message
-                $('#response').html(`<span class="text-success" style="padding: 20px 0px;"><strong>Your message has been sent. </strong></span>`);
+                $('#response').html(`<span class="text-success" style="padding: 20px 0px;"><strong>Your message has been sent. We'll contact you shortly!</strong></span>`);
                 //clear all fields
                 $('#contact-us-form').trigger("reset");
             },
