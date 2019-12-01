@@ -177,7 +177,7 @@
                 <div class="row wow fadeInUp">
                     <div class="col-md-12">
                         <div class="radford links-grid-radford">
-                                <ul class="wow fadeInUp" data-wow-delay="0.2s"
+                            <ul class="wow fadeInUp" data-wow-delay="0.2s"
                                 style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp; margin: 0px; padding: 0px;">
                                 <li class="grid-40 first-image hover-block"><img src="./assets/img/png/blank590x400.png"
                                         style="background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./assets/img/jpg/services/resendential.jpg')">
@@ -197,7 +197,8 @@
                                                     class="fa fa-arrow-right"></i></a>
                                         </div>
                                     </li>
-                                    <li class="grid-55 third-image hover-block"><img src="./assets/img/png/blank590x400.png"
+                                    <li class="grid-55 third-image hover-block"><img
+                                            src="./assets/img/png/blank590x400.png"
                                             style="background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./assets/img/jpg/services/retail.jpg')">
                                         <div class="search-by-neighborhood-content">
                                             <h5>Retail</h5>
@@ -218,7 +219,8 @@
                             </ul>
                         </div>
                     </div>
-                </div><br><hr>
+                </div><br>
+                <hr>
                 <div class="row wow fadeInUp">
                     <div class="col-lg-12">
                         <div style="color: #fff; font-size: 18px; ">
@@ -405,7 +407,7 @@
                     </div>
                     <div class="form-block wow fadeInUp">
                         <h5>Online Inquiry</h5>
-                        <form action="mail.php" method="GET">
+                        <form id="contact-us-form">
                             <ul style="list-style-type: none; padding: 0px; margin:0px;">
                                 <li><input type="text" name="name" placeholder="Name" min="3" required></li>
                                 <li><input type="email" name="email" placeholder="Email" required></li>
@@ -418,31 +420,10 @@
                                         <option>Selling</option>
                                         <option>Other</option>
                                     </select>
-                                    <!-- <div class="selectric-input-component">
-                                        <div class="selectric-wrapper selectric-selectric">
-                                            <div class="selectric-hide-select"><select class="selectric">
-                                                    <option>What are you interested in?</option>
-                                                    <option>Buying</option>
-                                                    <option>Selling</option>
-                                                    <option>Other</option>
-                                                </select></div>
-                                            <div class="selectric"><span class="label">What are you interested in?</span><b
-                                                    class="button"></b></div>
-                                            <div class="selectric-items" style="width:100%">
-                                                <div class="selectric-scroll">
-                                                    <ul>
-                                                        <li class=" selected highlighted">What are you interested in?</li>
-                                                        <li class="">Buying</li>
-                                                        <li class="">Selling</li>
-                                                        <li class="">Other</li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div> -->
                                 </li>
                                 <li><textarea name="message" placeholder="Message" required minlength="3"></textarea>
                                 </li>
+                                <div id="response"></div>
                                 <li><button class="link-btn" type="submit">Send <i class="fa fa-arrow-right">
                                         </i></button></li>
                             </ul>
@@ -519,7 +500,7 @@
     </div>
 
     <!-- External plugins -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="./assets/js/jquery-3.4.1.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <script src="./assets/js/wow.min.js"></script>
     <!-- Custom scripts -->
