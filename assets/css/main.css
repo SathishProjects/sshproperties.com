@@ -1628,7 +1628,7 @@ select {
 }
 
 .list-group-item-last {
-  min-height: 40em;
+  min-height: 20em;
 }
 
 #carrers {
