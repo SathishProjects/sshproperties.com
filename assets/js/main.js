@@ -18,10 +18,20 @@ $(document).ready(function () {
 
     new WOW().init();
 
-    $(".overlay-close").on("click", function () {
+    $(".overlay-close, .close-popup").on("click", function () {
         $("#contact-form").css("display", "none");
+        $("#service-detail-form").css("display", "none");
         $("body").css({ 'overflow-y': '', 'position': '', 'width': '', 'top': '' });
         $('.navbar ').addClass('fixed-top');
+    });
+
+    $(document).on('keydown', function(event) {
+        if (event.key == "Escape") {
+            $("#contact-form").css("display", "none");
+            $("#service-detail-form").css("display", "none");
+            $("body").css({ 'overflow-y': '', 'position': '', 'width': '', 'top': '' });
+            $('.navbar ').addClass('fixed-top');
+        }
     });
 
     $(document).keyup(function (e) {
@@ -70,12 +80,10 @@ $(document).ready(function () {
     });
 
     $(".community-link").on('click', function(event){
-
-        $('body, html').animate({
-            scrollTop: $('#details').offset().top - $(window).height() + 330
-        }, 1000);
         
         var type = event.target.classList[2];
+
+        $(".details-h2").html(type).css('textTransform', 'capitalize');
 
         if(type === "residential"){
             $(".details-ul").html(`
@@ -122,6 +130,9 @@ $(document).ready(function () {
                 <li><i class="fa fa-check"></i>&nbsp; <a>Supporting documentation, Registration and Post Sale support</a></li>
             `);
         }
+
+        $("#service-detail-form").css("display", "block");
+        $(".service-detail-form").css("visibility", "");
     });
 
 });
