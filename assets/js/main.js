@@ -87,47 +87,47 @@ $(document).ready(function () {
 
         if(type === "residential"){
             $(".details-ul").html(`
-                <li><i class="fa fa-check"></i>&nbsp; <a>Collect the customer residential requirements ( Selling / Buying / Rental ) clearly</a></li>
-                <li><i class="fa fa-check"></i>&nbsp; <a>Discuss with client about market analysis, Current trend etc.</a></li>
-                <li><i class="fa fa-check"></i>&nbsp; <a>Identifying multiple properties and discuss in detail about each property with customer</a></li>
-                <li><i class="fa fa-check"></i>&nbsp; <a>Schedule an appointment with customer for Site visit</a></li>
-                <li><i class="fa fa-check"></i>&nbsp; <a>Brief the property details and if customer is interested in the property</a></li>
-                <li><i class="fa fa-check"></i>&nbsp; <a>Initiate the Rate negotiation and try to get the best deal for the customer</a></li>
-                <li><i class="fa fa-check"></i>&nbsp; <a>Close the deal</a></li>
-                <li><i class="fa fa-check"></i>&nbsp; <a>Supporting documentation, Registration and Post Sale support</a></li>
+                <li><a>Collect the customer residential requirements ( Selling / Buying / Rental ) clearly</a></li>
+                <li><a>Discuss with client about market analysis, Current trend etc.</a></li>
+                <li><a>Identifying multiple properties and discuss in detail about each property with customer</a></li>
+                <li><a>Schedule an appointment with customer for Site visit</a></li>
+                <li><a>Brief the property details and if customer is interested in the property</a></li>
+                <li><a>Initiate the Rate negotiation and try to get the best deal for the customer</a></li>
+                <li><a>Close the deal</a></li>
+                <li><a>Supporting documentation, Registration and Post Sale support</a></li>
             `);
         }else if(type === "commercial"){
             $(".details-ul").html(`
-                <li><i class="fa fa-check"></i>&nbsp; <a>Collect the customer commercial requirements ( Selling / Buying / Rental ) clearly</a></li>
-                <li><i class="fa fa-check"></i>&nbsp; <a>Discuss with client about market analysis, Current trend etc.</a></li>
-                <li><i class="fa fa-check"></i>&nbsp; <a>Identifying multiple properties and discuss in detail about each property with customer</a></li>
-                <li><i class="fa fa-check"></i>&nbsp; <a>Schedule an appointment with customer for Site visit</a></li>
-                <li><i class="fa fa-check"></i>&nbsp; <a>Brief the property details and if customer is interested in the property</a></li>
-                <li><i class="fa fa-check"></i>&nbsp; <a>Initiate the Rate negotiation and try to get the best deal for the customer</a></li>
-                <li><i class="fa fa-check"></i>&nbsp; <a>Close the deal</a></li>
-                <li><i class="fa fa-check"></i>&nbsp; <a>Supporting documentation, Registration and Post Sale support</a></li>
+                <li><a>Collect the customer commercial requirements ( Selling / Buying / Rental ) clearly</a></li>
+                <li><a>Discuss with client about market analysis, Current trend etc.</a></li>
+                <li><a>Identifying multiple properties and discuss in detail about each property with customer</a></li>
+                <li><a>Schedule an appointment with customer for Site visit</a></li>
+                <li><a>Brief the property details and if customer is interested in the property</a></li>
+                <li><a>Initiate the Rate negotiation and try to get the best deal for the customer</a></li>
+                <li><a>Close the deal</a></li>
+                <li><a>Supporting documentation, Registration and Post Sale support</a></li>
             `);
         }else if(type === "retail"){
             $(".details-ul").html(`
-                <li><i class="fa fa-check"></i>&nbsp; <a>Collect the customer retail requirements ( Selling / Buying / Rental ) clearly</a></li>
-                <li><i class="fa fa-check"></i>&nbsp; <a>Discuss with client about market analysis, Current trend etc.</a></li>
-                <li><i class="fa fa-check"></i>&nbsp; <a>Identifying multiple properties and discuss in detail about each property with customer</a></li>
-                <li><i class="fa fa-check"></i>&nbsp; <a>Schedule an appointment with customer for Site visit</a></li>
-                <li><i class="fa fa-check"></i>&nbsp; <a>Brief the property details and if customer is interested in the property</a></li>
-                <li><i class="fa fa-check"></i>&nbsp; <a>Initiate the Rate negotiation and try to get the best deal for the customer</a></li>
-                <li><i class="fa fa-check"></i>&nbsp; <a>Close the deal</a></li>
-                <li><i class="fa fa-check"></i>&nbsp; <a>Supporting documentation, Registration and Post Sale support</a></li>
+                <li><a>Collect the customer retail requirements ( Selling / Buying / Rental ) clearly</a></li>
+                <li><a>Discuss with client about market analysis, Current trend etc.</a></li>
+                <li><a>Identifying multiple properties and discuss in detail about each property with customer</a></li>
+                <li><a>Schedule an appointment with customer for Site visit</a></li>
+                <li><a>Brief the property details and if customer is interested in the property</a></li>
+                <li><a>Initiate the Rate negotiation and try to get the best deal for the customer</a></li>
+                <li><a>Close the deal</a></li>
+                <li><a>Supporting documentation, Registration and Post Sale support</a></li>
             `);
         }else if(type === "warehouse"){
             $(".details-ul").html(`
-                <li><i class="fa fa-check"></i>&nbsp; <a>Collect the customer house ( Selling / Buying / Rental ) requirements clearly</a></li>
-                <li><i class="fa fa-check"></i>&nbsp; <a>Discuss with client about market analysis, Current trend etc.</a></li>
-                <li><i class="fa fa-check"></i>&nbsp; <a>Identifying multiple properties and discuss in detail about each property with customer</a></li>
-                <li><i class="fa fa-check"></i>&nbsp; <a>Schedule an appointment with customer for Site visit</a></li>
-                <li><i class="fa fa-check"></i>&nbsp; <a>Brief the property details and if customer is interested in the property</a></li>
-                <li><i class="fa fa-check"></i>&nbsp; <a>Initiate the Rate negotiation and try to get the best deal for the customer</a></li>
-                <li><i class="fa fa-check"></i>&nbsp; <a>Close the deal</a></li>
-                <li><i class="fa fa-check"></i>&nbsp; <a>Supporting documentation, Registration and Post Sale support</a></li>
+                <li><a>Collect the customer house ( Selling / Buying / Rental ) requirements clearly</a></li>
+                <li><a>Discuss with client about market analysis, Current trend etc.</a></li>
+                <li><a>Identifying multiple properties and discuss in detail about each property with customer</a></li>
+                <li><a>Schedule an appointment with customer for Site visit</a></li>
+                <li><a>Brief the property details and if customer is interested in the property</a></li>
+                <li><a>Initiate the Rate negotiation and try to get the best deal for the customer</a></li>
+                <li><a>Close the deal</a></li>
+                <li><a>Supporting documentation, Registration and Post Sale support</a></li>
             `);
         }
 
