@@ -618,6 +618,7 @@ select {
   color: #fff;
   cursor: pointer;
   z-index: 500;
+  font-size: 2em;
 }
 
 .radford.contact-form-overlay-1_0_2
