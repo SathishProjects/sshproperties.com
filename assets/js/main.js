@@ -87,7 +87,7 @@ $(document).ready(function () {
 
         if(type === "residential"){
             $(".details-ul").html(`
-                <li><a><i class="fa fa-asterisk"></i>&nbsp; Collect the customer residential requirements ( Selling / Buying / Rental ) clearly</a></li>
+                <li><a><i class="fa fa-asterisk"></i>&nbsp; Collect the customer residential requirements (Selling / Buying / Rental) clearly</a></li>
                 <li><a><i class="fa fa-asterisk"></i>&nbsp; Discuss with client about market analysis, Current trend etc.</a></li>
                 <li><a><i class="fa fa-asterisk"></i>&nbsp; Identifying multiple properties and discuss in detail about each property with customer</a></li>
                 <li><a><i class="fa fa-asterisk"></i>&nbsp; Schedule an appointment with customer for Site visit</a></li>
@@ -98,7 +98,7 @@ $(document).ready(function () {
             `);
         }else if(type === "commercial"){
             $(".details-ul").html(`
-                <li><a><i class="fa fa-asterisk"></i>&nbsp; Collect the customer commercial requirements ( Selling / Buying / Rental ) clearly</a></li>
+                <li><a><i class="fa fa-asterisk"></i>&nbsp; Collect the customer commercial requirements (Selling / Buying / Rental) clearly</a></li>
                 <li><a><i class="fa fa-asterisk"></i>&nbsp; Discuss with client about market analysis, Current trend etc.</a></li>
                 <li><a><i class="fa fa-asterisk"></i>&nbsp; Identifying multiple properties and discuss in detail about each property with customer</a></li>
                 <li><a><i class="fa fa-asterisk"></i>&nbsp; Schedule an appointment with customer for Site visit</a></li>
@@ -109,7 +109,7 @@ $(document).ready(function () {
             `);
         }else if(type === "retail"){
             $(".details-ul").html(`
-                <li><a><i class="fa fa-asterisk"></i>&nbsp; Collect the customer retail requirements ( Selling / Buying / Rental ) clearly</a></li>
+                <li><a><i class="fa fa-asterisk"></i>&nbsp; Collect the customer retail requirements (Selling / Buying / Rental) clearly</a></li>
                 <li><a><i class="fa fa-asterisk"></i>&nbsp; Discuss with client about market analysis, Current trend etc.</a></li>
                 <li><a><i class="fa fa-asterisk"></i>&nbsp; Identifying multiple properties and discuss in detail about each property with customer</a></li>
                 <li><a><i class="fa fa-asterisk"></i>&nbsp; Schedule an appointment with customer for Site visit</a></li>
@@ -120,7 +120,7 @@ $(document).ready(function () {
             `);
         }else if(type === "warehouse"){
             $(".details-ul").html(`
-                <li><a><i class="fa fa-asterisk"></i>&nbsp; Collect the customer warehouse ( Selling / Buying / Rental ) requirements clearly</a></li>
+                <li><a><i class="fa fa-asterisk"></i>&nbsp; Collect the customer warehouse (Selling / Buying / Rental) requirements clearly</a></li>
                 <li><a><i class="fa fa-asterisk"></i>&nbsp; Discuss with client about market analysis, Current trend etc.</a></li>
                 <li><a><i class="fa fa-asterisk"></i>&nbsp; Identifying multiple properties and discuss in detail about each property with customer</a></li>
                 <li><a><i class="fa fa-asterisk"></i>&nbsp; Schedule an appointment with customer for Site visit</a></li>
